@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./Assets/css/main.css">
+    <title>Chuyển cơ số</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__solve">
+            <input type="text" class="container__data" id="txtData" value="100">
+            <div class="select-container">
+                <select name="" id="selBaseFrom">
+                    <option value="2" selected>Nhị phân</option>
+                    <option value="3">Tam phân</option>
+                    <option value="4">Tứ phân</option>
+                    <option value="5">Ngũ phân</option>
+                    <option value="6">Lục phân</option>
+                    <option value="7">Thất phân</option>
+                    <option value="8">Bát phân</option>
+                    <option value="9">Cửu phân</option>
+                    <option value="10">Thập phân</option>
+                    <option value="12">Thập nhị phân</option>
+                    <option value="16">Thập lục phân</option>
+                </select>
+                <div class="convert-icon" id="convertIcon"><i class="fas fa-sync-alt"></i></div>
+                <select name="" id="selBaseTo">
+                    <option value="2">Nhị phân</option>
+                    <option value="3">Tam phân</option>
+                    <option value="4">Tứ phân</option>
+                    <option value="5">Ngũ phân</option>
+                    <option value="6">Lục phân</option>
+                    <option value="7">Thất phân</option>
+                    <option value="8">Bát phân</option>
+                    <option value="9">Cửu phân</option>
+                    <option value="10" selected>Thập phân</option>
+                    <option value="12">Thập nhị phân</option>
+                    <option value="16">Thập lục phân</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="container__result">
+            <span class="container__result-text" id="result"></span>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./Assets/js/function.js"></script>
+<script src="./Assets/js/main.js"></script>
