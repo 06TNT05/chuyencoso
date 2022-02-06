@@ -5,9 +5,10 @@ function chuyenCoSo(numString, baseFrom, baseTo){
     let toBase = ""
     // chuyển từ cơ số baseFrom sang cơ số 10
     toDec = BaseToDec(numString, baseFrom)
-    if(baseTo == 10){
-        return toDec
-    }
+
+    // if(baseTo == 10){
+    //     return toDec
+    // }
     if(toDec){
         // chuyển từ cơ số 10 sang cơ số baseTo
         toBase = DecToBase(toDec, baseTo)
@@ -35,6 +36,7 @@ function BaseToDec(numString, base){
         if(i !== "0"){
             i = value.indexOf(i)
             result += i * Math.pow(base, numHats)
+
         }
         numHats--
     }
@@ -50,8 +52,8 @@ function DecToBase(number, base){
         let phanDu = number % base
         resultReverse += value[phanDu]
         // chia lấy nguyên
-        // number = Math.floor(number/base)
-        number = (number - number%base)/base
+        number = Math.floor(number/base)
+        //number = (number - number%base)/base (bug)
     }
 
     for(let i = resultReverse.length - 1; i >= 0; i--){
